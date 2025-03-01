@@ -38,7 +38,7 @@ function App() {
       {loading ? (
         <Spinner size="2xl" />
       ) : (
-        <SimpleGrid columns={[1, 2, 3, 4, 5]} spacing={5}>
+        <SimpleGrid columns={[1, 2, 3]} spacing={5}>
           {images.map((image, index) => (
             <Box key={index} p={8} boxShadow="2xl" borderRadius="2xl">
               <Image src={image} alt={`Animal ${index}`} borderRadius="2xl" />
